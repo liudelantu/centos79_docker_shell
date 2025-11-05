@@ -1,0 +1,2 @@
+# centos79_docker_shell
+CentOS7.9系统里Docker容器安装任意程序的通用脚本
