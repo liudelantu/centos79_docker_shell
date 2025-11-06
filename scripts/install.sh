@@ -73,6 +73,7 @@ EOF
     echo "  3) MySQL 5.7 + 8.0"
     echo "  4) GitLab"
     echo "  5) 查看运行状态"
+    echo "  6) Clickhouse"
     echo "  0) 退出"
     echo ""
     echo -e "${BLUE}当前工作目录: ${BASE_DIR}${NC}"
@@ -153,6 +154,10 @@ main() {
                 ;;
             5)
                 show_status
+                ;;
+            6)
+                run_module "clickhouse.sh"
+                read -p "按回车键继续..."
                 ;;
             0)
                 print_info "退出脚本"
